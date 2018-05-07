@@ -1,0 +1,14 @@
+syntax = "proto3";
+import "SpatialTransform.proto";
+import "ChronalTransform.proto";
+
+message SineSingle {
+	string name = 1;
+
+	enum AxisDirection { X = 0; Y = 1; }
+	AxisDirection axis = 2;
+
+	// NOTE: 1-dimensional; only using `repeated` for consistency.
+	repeated SpatialTransform param_space = 3;
+	ChronalTransform param_time = 4;
+}

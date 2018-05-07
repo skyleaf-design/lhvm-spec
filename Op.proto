@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "SineSingle.proto";
+// @TODO: import all combinators, transforms, and stream object messages.
+
+message Op {
+	oneof command {
+		SineSingle object_sine = 1;
+		string test = 2;
+		// object 2
+		// object 3
+		// transform 2
+		// transform 3
+		// combinator 1
+		// combinator 2
+		// combinator 3
+  }
+}
+
+// optional spots to attach a stream object instance, a transform enum case,
+// or a combinator case.  Only one can be filled out.

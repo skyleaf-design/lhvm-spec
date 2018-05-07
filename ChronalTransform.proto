@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message ChronalTransform {
+	double translate = 1;
+	double scale = 2;
+	double period = 3;
+}

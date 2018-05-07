@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-message HeightmapSchemaDescriptor {
-	uint32 samples_per_second = 1;
-	uint32 dimension_x = 2;
-  uint32 dimension_y = 3;
-}
