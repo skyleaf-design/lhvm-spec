@@ -1,6 +1,7 @@
 syntax = "proto3";
-import "SpatialTransform.proto";
-import "ChronalTransform.proto";
+
+import "object/SpatialTransform.proto";
+import "object/ChronalTransform.proto";
 
 message SineSingle {
 	string name = 1;
@@ -9,6 +10,6 @@ message SineSingle {
 	AxisDirection axis = 2;
 
 	// NOTE: 1-dimensional; only using `repeated` for consistency.
-	repeated SpatialTransform param_space = 3;
-	ChronalTransform param_time = 4;
+	SpatialTransform transform_space = 3;
+	ChronalTransform transform_time = 4;
 }

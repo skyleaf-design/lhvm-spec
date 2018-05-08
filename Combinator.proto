@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Combinator {
+	enum CombinatorFunction {
+    SUM = 0;
+    SCALE = 1;
+    COMPOSE = 2;
+  }
+  uint32 arity = 1;
+  CombinatorFunction combinator = 2;
+}

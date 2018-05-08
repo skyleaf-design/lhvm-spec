@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+message ShapingFunction {
+	enum ShapingOperation {
+    SIN = 0;
+    ASIN = 1;
+    COS = 2;
+    ACOS = 3;
+    TAN = 4;
+    ATAN = 5;
+    POW = 6;
+    EXP = 7;
+    LOG = 8;
+    SQRT = 9;
+    ABS = 10;
+    SIGN = 11;
+    FLOOR = 12;
+    CEIL = 13;
+    FRACT = 14;
+    MOD = 15;
+    MIN = 16;
+    MAX = 17;
+    CLAMP = 18;
+    ALMOST = 19;
+    IMPULSE = 20;
+    CUB_PULSE = 21;
+    EX_STEP = 22;
+    GAIN = 23;
+    PARABOLA = 24;
+    POW_CURVE = 25;
+    SINC_CURVE = 26;
+  
+    // GET MOUSE X
+    // LOAD VAR
+    // GET VAR
+    // GET PARAM
+    // DECLARE CONTROL
+  }
+
+  ShapingOperation operation = 1;
+  repeated double arguments = 2;
+}
+

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "object/SpatialTransform.proto";
+import "object/ChronalTransform.proto";
+
+message SineDouble {
+	string name = 1;
+
+	enum AxisDirection { X = 0; Y = 1; }
+	AxisDirection axis = 2;
+
+	// NOTE: 1-dimensional; only using `repeated` for consistency.
+  SpatialTransform transform_space_x = 3;
+  SpatialTransform transform_space_y = 4;
+  SpatialTransform transform_space_z = 5;
+	ChronalTransform transform_time = 6;
+}
