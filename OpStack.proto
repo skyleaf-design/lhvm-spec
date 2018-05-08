@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "Op.proto";
+
+message OpStack {
+	repeated Op ops = 1;
+}
