@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "object/SpatialTransformD.proto";
+import "object/ChronalTransformD.proto";
+
+message SineSingleD {
+	string name = 1;
+
+	enum AxisDirection { X = 0; Y = 1; }
+	AxisDirection axis = 2;
+
+	// NOTE: 1-dimensional; only using `repeated` for consistency.
+	SpatialTransformD transform_space = 3;
+	ChronalTransformD transform_time = 4;
+}

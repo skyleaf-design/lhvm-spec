@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "object/SineSingleD.proto";
+import "object/SineDoubleD.proto";
+import "object/CloudsD.proto";
+
+import "shaping/ShapingStackD.proto";
+import "CombinatorD.proto";
+
+message OpD {
+	oneof command {
+		SineSingleD object_sine_1 = 1;
+		SineDoubleD object_sine_2 = 2;
+		CloudsD object_clouds = 3;
+
+		// If the is_nop field is used, then it should ALWAYS be set to true.
+		bool is_nop = 4;
+
+		ShapingStackD shaping_stack = 5;
+		CombinatorD combinator = 6;
+  }
+}

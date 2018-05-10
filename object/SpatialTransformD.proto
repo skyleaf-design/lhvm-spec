@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 // Every stream object varies through space and time.
-message SpatialTransform {
+message SpatialTransformD {
 	double translate = 1;
 	double scale = 2;
 	double rotate = 3;

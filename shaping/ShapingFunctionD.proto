@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-message ShapingFunction {
+message ShapingFunctionD {
 	enum ShapingOperation {
     SIN = 0;
     ASIN = 1;

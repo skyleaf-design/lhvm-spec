@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-message Combinator {
+message CombinatorD {
 	enum CombinatorFunction {
     SUM = 0;
     SCALE = 1;

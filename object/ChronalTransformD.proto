@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-message ChronalTransform {
+message ChronalTransformD {
 	double translate = 1;
 	double scale = 2;
 	double period = 3;

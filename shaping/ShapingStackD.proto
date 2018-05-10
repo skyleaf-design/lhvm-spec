@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "shaping/ShapingFunctionD.proto";
+
+message ShapingStackD {
+  repeated ShapingFunctionD functions = 1;
+}

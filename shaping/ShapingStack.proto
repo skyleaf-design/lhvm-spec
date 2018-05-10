@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-import "shaping/ShapingFunction.proto";
-
-message ShapingStack {
-  repeated ShapingFunction functions = 1;
-}

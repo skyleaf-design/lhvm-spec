@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "object/SpatialTransformD.proto";
+import "object/ChronalTransformD.proto";
+
+message CloudsD {
+	string name = 1;
+	double frequency = 2;
+	uint32 octaveCount = 3;
+	double persistance = 4;
+	double lacunarity = 5;
+
+	SpatialTransformD transform_space = 6;
+	ChronalTransformD transform_time = 7;
+}
