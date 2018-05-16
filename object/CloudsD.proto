@@ -10,6 +10,6 @@ message CloudsD {
 	double persistance = 4;
 	double lacunarity = 5;
 
-	SpatialTransformD transform_space = 6;
+	SpatialTransformD transform_space_z = 6;
 	ChronalTransformD transform_time = 7;
 }

@@ -6,12 +6,6 @@ import "object/ChronalTransformD.proto";
 message SineDoubleD {
 	string name = 1;
 
-	enum AxisDirection { X = 0; Y = 1; }
-	AxisDirection axis = 2;
-
-	// NOTE: 1-dimensional; only using `repeated` for consistency.
-  SpatialTransformD transform_space_x = 3;
-  SpatialTransformD transform_space_y = 4;
-  SpatialTransformD transform_space_z = 5;
-	ChronalTransformD transform_time = 6;
+  SpatialTransformD transform_space_z = 3;
+	ChronalTransformD transform_time = 4;
 }
