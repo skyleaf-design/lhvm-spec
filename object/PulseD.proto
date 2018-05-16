@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "object/SpatialTransformD.proto";
+import "object/ChronalTransformD.proto";
+
+message PulseD {
+	string name = 1;
+
+	SpatialTransformD transform_space_z = 3;
+	ChronalTransformD transform_time = 4;
+}

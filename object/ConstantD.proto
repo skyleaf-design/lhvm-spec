@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+
+message ConstantD {
+	string name = 1;
+  double value = 2;
+}

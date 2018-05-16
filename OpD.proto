@@ -3,6 +3,8 @@ syntax = "proto3";
 import "object/SineSingleD.proto";
 import "object/SineDoubleD.proto";
 import "object/CloudsD.proto";
+import "object/ConstantD.proto";
+import "object/PulseD.proto";
 
 import "shaping/ShapingStackD.proto";
 import "CombinatorD.proto";
@@ -12,11 +14,13 @@ message OpD {
 		SineSingleD object_sine_1 = 1;
 		SineDoubleD object_sine_2 = 2;
 		CloudsD object_clouds = 3;
+		ConstantD object_constant = 4;
+		PulseD object_pulse = 5;
 
 		// If the is_nop field is used, then it should ALWAYS be set to true.
-		bool is_nop = 4;
+		bool is_nop = 6;
 
-		ShapingStackD shaping_stack = 5;
-		CombinatorD combinator = 6;
+		ShapingStackD shaping_stack = 7;
+		CombinatorD combinator = 8;
   }
 }
